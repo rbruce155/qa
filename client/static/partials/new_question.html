@@ -1,0 +1,17 @@
+<a href="#/dashboard">Home</a> | <a href="#/logout">Logout</a>
+<h3>New Question</h3>
+<form class="form-horizontal">
+	<div class="form-group">
+		<label class="control-label col-md-2">Question:</label>
+		<div class="col-md-4">
+			<input class="form-control" ng-model="newQuestion.question_text" />
+		</div>
+		<label class="control-label col-md-2">Description (optional):</label>
+		<div class="col-md-4">
+			<input class="form-control" ng-model="newQuestion.question_description" />
+		</div>
+	</div>
+	<div class="form-group">
+		<a href="#/dashboard"><button class="btn btn-default col-md-1 col-md-offset-5">Cancel</button></a>
+		<button class="btn btn-primary col-md-1 col-md-offset-5" ng-click="addQuestion(newQuestion)">Submit</button>
+</div>
